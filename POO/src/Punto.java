@@ -1,7 +1,7 @@
 
 public class Punto {
-private int x;
-private int y;
+protected int x;
+protected int y;
 
 public Punto(){
 	this.x=0;
@@ -27,15 +27,15 @@ public int gety(){
 }
 
 public void distanciaAlOrigen(){
-	int dx=this.x;
-	int dy=this.y;
-	System.out.printf("Distancia de x al origen: %d \nDistancia de y al origen: %d",x,y);
+	
+	double d=Math.sqrt((Math.pow(x, 2))+(Math.pow(y, 2)));
+
+	System.out.printf("Distancia al origen: %d",d);
 }
 
 public void distanciaOtroPunto(Punto p1){
-	int distanciaX=this.x-p1.x;
-	int distanciaY=this.y-p1.y;
-	System.out.printf("Distancia de x(%d) a y(%d): %d \nDistancia de x(%d) a y(%d): %d",p1.x,this.x,distanciaX,p1.y,this.y,distanciaY);
+	double distancia=Math.sqrt(Math.pow((p1.x-this.x),2)+Math.pow((p1.y-this.y),2));
+	System.out.printf("Distancia de x(%d) y(%d) a  x(%d) y(%d): %d",p1.x,this.x,p1.y,this.y,distancia);
 }
 
 public String toString(){
