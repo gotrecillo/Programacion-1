@@ -27,10 +27,16 @@ public int gety(){
 }
 
 public void distanciaAlOrigen(){
-	
-	double d=Math.sqrt((Math.pow(x, 2))+(Math.pow(y, 2)));
+	double d;
+	try{
+		d=Math.sqrt((Math.pow(x, 2))+(Math.pow(y, 2)));
 
-	System.out.printf("Distancia al origen: %d",d);
+		System.out.printf("Distancia al origen: %d",d);	
+	}catch(NullPointerException e){
+		System.out.println("Puntero nulo");
+	}
+	
+	
 }
 
 public void distanciaOtroPunto(Punto p1){

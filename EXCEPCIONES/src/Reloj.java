@@ -1,4 +1,3 @@
-
 /*2. Diseñar la clase  Reloj que señale la hora, 
  * minuto y segundo con sus constructores, 
  * métodos get y set correspondientes, 
@@ -47,9 +46,9 @@ public String toString(){
 
 
 public void ponHora(Reloj horaActual){
-	horaActual.hora=11;
-	horaActual.min=35;
-	horaActual.seg=41;
+	horaActual.hora=hora;
+	horaActual.min=min;
+	horaActual.seg=seg;
 }
 
 
