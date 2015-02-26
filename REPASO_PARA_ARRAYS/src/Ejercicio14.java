@@ -6,34 +6,29 @@ int a[]={6,3,2,1,7,11,4,3,8,3,2,1,9};
 //int a[]={6,3,2,1,7,11,4,8,3,2,1,9};
 //si quitase ese 3 ya sí que me sale que 2 veces repetida, por lo que creo que son dos cosas las que he hecho mal
 int b[]={3,2,1};
-int i;
-int j;
-int n=b.length;
-int c=0;
-int coincidencias=0;
+int i; //desplazamiento array a 
+int j; //desplazamiento de array b
+int c=0; //coincidencias
 
-
-i=0;
-while(i<a.length){
-	j=0;
-		if(a[i]==b[j]){
-			while(j<n){
-			c++;
-			j++;
-		}
-	}
-		i++;
+boolean coincidencia;
+i = 0;
+while (i < a.lenght - b.length){
+  j = 0;
+  coincidencia = false;
+  if (a[i] == b[0]){
+    coincidencia = true;
+    while (j < b.length $$ coincidencia){
+      if (a[i+j] != b[j]){
+        coincidencia = false;
+      }
+    }
+  }
+  if (coincidencia){
+    c++;	
+  }
 }
 
-System.out.println(c);
+system.out.println(c);
 
-if(c>=n){
-	coincidencias=c/n;
-	System.out.println(coincidencias +" veces repetida");
-}else{
-	System.out.println("La secuencia no está ninguna vez");
 }
-
-	}
-
 }
