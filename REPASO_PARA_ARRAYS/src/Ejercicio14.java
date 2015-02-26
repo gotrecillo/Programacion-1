@@ -1,8 +1,10 @@
 /*buscar un array dentro de otro 
- * mostrar las posiciones*/
+ */
 public class Ejercicio14 {
 public static void main(String[] args) {
 int a[]={6,3,2,1,7,11,4,3,8,3,2,1,9};
+//int a[]={6,3,2,1,7,11,4,8,3,2,1,9};
+//si quitase ese 3 ya sí que me sale que 2 veces repetida, por lo que creo que son dos cosas las que he hecho mal
 int b[]={3,2,1};
 int i;
 int j;
